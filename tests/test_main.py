@@ -5,9 +5,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '../src'))
 
 import pytest
 import pandas as pd
-from my_module.data_fetcher import fetch_stock_data
-from my_module.data_analyzer import analyze_stock_data
-from my_module.data_plotter import plot_stock_data
+from my_module import fetch_stock_data, analyze_stock_data, plot_stock_data
 import os
 
 
