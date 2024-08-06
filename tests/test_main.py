@@ -31,13 +31,13 @@ def test_fetch_stock_data(stock_data):
     assert not stock_data.empty
 
 def test_analyze_stock_data(stock_data):
-    analyzed_data = analyze_stock_data(stock_data)
-    assert 'SMA_50' in analyzed_data.columns
-    assert 'SMA_200' in analyzed_data.columns
+    analyzed_data       = analyze_stock_data(stock_data)
+    assert 'SMA_50'     in analyzed_data.columns
+    assert 'SMA_200'    in analyzed_data.columns
 
 def test_plot_stock_data(stock_data):
-    analyzed_data = analyze_stock_data(stock_data)
-    output_file = "test_stock_plot.png"
+    analyzed_data   = analyze_stock_data(stock_data)
+    output_file     = "test_stock_plot.png"
     plot_stock_data(analyzed_data, output_file)
     assert os.path.exists(output_file)
     os.remove(output_file)
