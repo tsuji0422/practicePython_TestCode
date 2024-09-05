@@ -1,5 +1,6 @@
 import sys
 import os
+from dotenv import load_dotenv
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
@@ -9,9 +10,13 @@ def main():
     """
     メイン関数。株価データの取得、解析、グラフ作成を行う。
     """
-    ticker      = "AAPL"  # 例としてAppleのティッカーシンボルを使用
-    start_date  = "2020-01-01"
-    end_date    = "2021-01-01"
+    # .envファイルのパスを指定して読み込む
+    load_dotenv(".env")
+
+    # 環境変数を取得
+    ticker = os.getenv("ticker")
+    start_date = os.getenv("start_date")
+    end_date = os.getenv("end_date")
     
     # 株価データの取得
     stock_data = fetch_stock_data(ticker, start_date, end_date)
