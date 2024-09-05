@@ -31,4 +31,4 @@
 
 ## 詳細
 
-- [GetStarted!](/docs/getStarted.md)
+- [GetStarted!](/docs/developer/getStarted.md)
