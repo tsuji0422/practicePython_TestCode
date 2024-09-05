@@ -6,6 +6,9 @@ VSCodeを使ってローカルで実行環境を用意するシナリオ。Anaco
 
 ## Python実行環境
 
+<details>
+<summary>WSLを使わない簡単な方法</summary>
+
 [Visual Studio Code でPython入門 【Windows編】](https://www.python.jp/python_vscode/windows/index.html)
 
 上記の記事を参考に実行環境を用意する。もしPythonのバージョン管理がしたくなったら、[pyenv-win](https://github.com/pyenv-win/pyenv-win)の導入を検討してもいいと思うが、基本的にはいらない。
@@ -46,3 +49,4 @@ Pythonは様々なライブラリが豊富で、それらを使って開発が�
 
 上記をコマンドラインで打つとテストが実行できる。
 
+</details>
